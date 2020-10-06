@@ -1,0 +1,20 @@
+.Nav li{
+    text-align: center;
+    display: inline;
+    margin-left: 65px;
+    font-weight: 700;
+}
+.Nav {
+    text-align: center;
+    margin-top: 50px;
+    overflow: hidden;
+    
+}
+.Nav ul li:focus{
+    color:red !important;
+    outline: none;
+}
+.Nav ul li.active{
+    color: red !important;
+    border-bottom: red;
+}

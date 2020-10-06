@@ -1,0 +1,14 @@
+.handleplusminus{
+    
+    border-radius: 25px;
+        
+    background-color: rgb(245, 241, 241);
+    height: 30px;
+    border: 1px solid rgb(238, 195, 114);
+    width: 100px;
+   margin-left: 10px;
+ 
+}
+.one{
+    padding: 5px 5px;
+}
