@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap';
 
 const RegisterEventShow = (props) => {
     const deleteItem=(id)=>{
-        fetch('http://localhost:5000/deleteitem/'+id,{
+        fetch('https://secure-shelf-36035.herokuapp.com/deleteitem/'+id,{
             method:'DELETE'
         })
         .then(res=> res.json())

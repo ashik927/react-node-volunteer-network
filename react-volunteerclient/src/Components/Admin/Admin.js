@@ -7,7 +7,7 @@ import Adminshow from './Adminshow';
 const Admin = () => {
     const [data , setData] = useState([]);
     useEffect(()=>{
-        fetch('http://localhost:5000/adminreadregisterevent')
+        fetch('https://secure-shelf-36035.herokuapp.com/adminreadregisterevent')
         .then(res => res.json())
         .then(result=> setData(result))
 },[])

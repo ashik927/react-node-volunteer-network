@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 const Adminshow = (props) => {
     const history = useHistory();
     const deleteItem=(id)=>{
-        fetch('http://localhost:5000/admindeleteitem/'+id,{
+        fetch('https://secure-shelf-36035.herokuapp.com/admindeleteitem/'+id,{
             method:'DELETE'
         })
         .then(res=> res.json())

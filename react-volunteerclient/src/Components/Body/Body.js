@@ -15,7 +15,7 @@ const Body = () => {
     const [cart,setCart]=useState([]);
     
     const addEvent=()=>{
-        fetch('http://localhost:5000/addevent',{
+        fetch('https://secure-shelf-36035.herokuapp.com/addevent',{
             method: 'POST',
            headers:{'Content-Type': 'application/json'},
            body: JSON.stringify(data)
@@ -25,7 +25,7 @@ const Body = () => {
     }
         
     useEffect(()=>{
-        fetch('http://localhost:5000/readevent')
+        fetch('https://secure-shelf-36035.herokuapp.com/readevent')
         .then(res => res.json())
         .then(result=> setCart(result))
 

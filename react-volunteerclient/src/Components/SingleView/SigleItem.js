@@ -33,7 +33,7 @@ const SigleItem = () => {
     const [add,setAdd]=useState(1);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/readevent/'+id)
+        fetch('https://secure-shelf-36035.herokuapp.com/readevent/'+id)
         .then(res => res.json())
         .then(result=> setItem(result))
 
@@ -41,7 +41,7 @@ const SigleItem = () => {
 
     const handleRegister=()=>{
         const newRegistration = {...loggedInUser , ...selectedDate , ...Item , ...description}
-        fetch('http://localhost:5000/addregister',{
+        fetch('https://secure-shelf-36035.herokuapp.com/addregister',{
             method: 'POST',
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify(newRegistration)

@@ -9,7 +9,7 @@ const RegisterEvent = () => {
     const [loggedInUser,setLoggedInUser] = useContext(userContext);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/readregisterevent?email='+loggedInUser.email)
+        fetch('https://secure-shelf-36035.herokuapp.com/readregisterevent?email='+loggedInUser.email)
         .then(res => res.json())
         .then(result=> setReadItem(result))
 },[])
